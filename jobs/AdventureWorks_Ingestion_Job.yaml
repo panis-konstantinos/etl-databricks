@@ -1,0 +1,36 @@
+resources:
+  jobs:
+    AdventureWorks_Ingestion_Job:
+      name: AdventureWorks_Ingestion_Job
+      description: This job orchestrates a multi-layer data processing pipeline based
+        on the Medallion Architecture for the AdventureWorks dataset. The
+        pipeline ingests raw data, applies progressive transformations, and
+        produces curated datasets optimized for analytics and business
+        intelligence.
+      email_notifications:
+        on_start:
+          - <your_email@example.com>    # Replace with your email
+        on_success:
+          - <your_email@example.com>    # Replace with your workspace path
+        on_failure:
+          - <your_email@example.com>    # Replace with your workspace path
+      tasks:
+        - task_key: bronze_ingestion
+          notebook_task:
+            notebook_path: </path_to_git_folder>/etl-databricks/notebooks/01_Bronze_Ingestion   # Replace with your workspace path
+            source: WORKSPACE
+        - task_key: silver_transformation
+          depends_on:
+            - task_key: bronze_ingestion
+          notebook_task:
+            notebook_path: </path_to_git_folder>/etl-databricks/notebooks/02_Silver_Transformation  # Replace with your workspace path
+            source: WORKSPACE
+        - task_key: gold_modeling
+          depends_on:
+            - task_key: silver_transformation
+          notebook_task:
+            notebook_path: </path_to_git_folder>/etl-databricks/notebooks/03_Gold_Modeling  # Replace with your workspace path
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
