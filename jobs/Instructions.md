@@ -1,5 +1,5 @@
 # Overview
-(AdventureWorks_Ingestion_Job.yaml)[jobs/AdventureWorks_Ingestion_Job.yaml] constitutes a template to create a job in Databricks to automate the creation of all medallion layers (bronze, silver, gold).
+[AdventureWorks_Ingestion_Job.yaml](./AdventureWorks_Ingestion_Job.yaml) constitutes a template to create a job in Databricks to automate the creation of all medallion layers (bronze, silver, gold).
 
 # Steps
 1. Create a job in Databricks
@@ -12,4 +12,4 @@
 
 5. Click save
 
-6. Return to project's (README)[../README.md]
+6. Return to project's [README](../README.md)
