@@ -29,4 +29,8 @@ Running the project assumes an active Databricks free tier account, and a Micros
 
 1. Connect the GitHub repo to the Databricks workspace
 
-2. Run ['00_create_schemas.ipynb'](./notebooks/00_create_schemas.ipynb)
+2. Run [00_create_schemas.ipynb](./notebooks/00_create_schemas.ipynb) located in the *'notebooks'* folder to create a new catalog, medallion schemas, and a volume to save raw data
+
+3. In Databricks, upload the files, located in the [data](./data) folder, into the volume *'project.bronze.raw_data'*
+
+4. Follow the instructions on ____ to create a job in Databricks in order to run all layers transformations
