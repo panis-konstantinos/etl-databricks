@@ -20,6 +20,8 @@ This project design and implements an analytics-ready ETL-pipeline in Databricks
 
 - Data Modeling (Gold Layer): Implementation of a star schema in Delta format to enable analytics-ready data layer that can be tailored to multiple reporting needs
 
+- Gold Layer Data Ingestion: Ingestion of gold layer data into Microsoft Fabric workspace
+
 - BI Semantic Model: Design of a MS PowerBI semantic model (star schema) that supports efficient reporting and analysis
 
 - Data Visualization: Creation of a MS PowerBI report with key measures, such as sales & margin trend, and global sales & profitability
@@ -33,4 +35,6 @@ Running the project assumes an active Databricks free tier account, and a Micros
 
 3. In Databricks, upload the files, located in the [data](./data) folder, into the volume *'project.bronze.raw_data'*
 
-4. Follow the instructions on ____ to create a job in Databricks in order to run all layers transformations
+4. Follow the instructions of [Instructions.md](jobs/Instructions.md) to create a job in Databricks in order to run all layers transformations
+
+5. 
