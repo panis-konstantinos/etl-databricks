@@ -37,4 +37,18 @@ Running the project assumes an active Databricks free tier account, and a Micros
 
 4. Follow the instructions of [Instructions.md](jobs/Instructions.md) to create a job in Databricks in order to run all layers transformations
 
-5. 
+5. Run the job to create the medallion architecture tables (bronze, silver, and gold layers)
+
+6. Run [parquet_export.ipynb](notebooks/parquet_export.ipynb) to extract gold layer delta tables in parquet format
+
+7. Create a Lakehouse in Microsoft Fabric to store the parquet files
+
+8. Import the parquet files in Fabric Lakehouse
+
+9. Load parquet files as tables (*'Load to Tables'*) in Fabric Lakehouse
+
+10. Create a new report in Microsoft PowerBI (via Microsoft Fabric)
+
+11. Get data from Fabric Lakehouse
+
+12. Create the semantic model of the report
