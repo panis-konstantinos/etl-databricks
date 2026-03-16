@@ -1,5 +1,5 @@
 # Overview
-This project designs and implements a small, end-to-end ETL analytics pipeline using an AdventureWorks-style dataset and is **co-developed by Arvanitis Anastasis, Lianeris Michail and Tsolaki Eleni**. The objective of the project is to design a unified sales analytics Lakehouse in Databricks, utilizing the medallion architecture, that will serve various analytics demands in an efficient and scalable way. After the implementation of the Lakehouse, the final data schema is ingested into Microsoft Fabric and utilized for data analysis in PowerBI
+This project designs and implements a small, end-to-end ETL analytics pipeline using an AdventureWorks-style dataset and is **co-developed by Arvanitis Anastasis, Lianeris Michail, Panis Konstantinos, and Tsolaki Eleni**. The objective of the project is to design a unified sales analytics Lakehouse in Databricks, utilizing the medallion architecture, that will serve various analytics demands in an efficient and scalable way. After the implementation of the Lakehouse, the final data schema is ingested into Microsoft Fabric and utilized for data analysis in PowerBI
 
 # Technical Stack
 In this project the following tools are used:
