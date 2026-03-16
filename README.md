@@ -23,3 +23,10 @@ This project design and implements an analytics-ready ETL-pipeline in Databricks
 - BI Semantic Model: Design of a MS PowerBI semantic model (star schema) that supports efficient reporting and analysis
 
 - Data Visualization: Creation of a MS PowerBI report with key measures, such as sales & margin trend, and global sales & profitability
+
+# How to Run
+Running the project assumes an active Databricks free tier account, and a Microsoft Fabric account (free trial is available). 
+
+1. Connect the GitHub repo to the Databricks workspace
+
+2. Run ['00_create_schemas.ipynb'](./notebooks/00_create_schemas.ipynb)
